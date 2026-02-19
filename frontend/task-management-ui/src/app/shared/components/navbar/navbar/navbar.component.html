@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bold" routerLink="/tasks">
+      TaskManager
+    </a>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="authService.isLogged()">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tasks" routerLinkActive="active">Tareas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/users" routerLinkActive="active">Usuarios</a>
+        </li>
+      </ul>
+
+      <button *ngIf="authService.isLogged()"
+              class="btn btn-outline-light btn-sm"
+              (click)="logout()">
+        Cerrar sesión
+      </button>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,46 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-md-5">
+
+    <div class="card shadow-lg border-0">
+      <div class="card-header bg-dark text-white text-center">
+        <h4 class="mb-0">Inicio de sesión</h4>
+      </div>
+
+      <div class="card-body p-4">
+
+        <form [formGroup]="form" (ngSubmit)="login()">
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Usuario</label>
+            <input class="form-control"
+                   formControlName="username"
+                   placeholder="Ingrese su usuario">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Contraseña</label>
+            <input class="form-control"
+                   type="password"
+                   formControlName="password"
+                   placeholder="Ingrese su contraseña">
+          </div>
+
+          <div class="d-grid">
+            <button class="btn btn-primary" type="submit">
+              Ingresar
+            </button>
+          </div>
+
+        </form>
+
+        <hr>
+
+        <p class="text-center text-muted small mb-0">
+          Usuario demo: <b>admin</b> | Contraseña: <b>admin123</b>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="card shadow-sm mb-5">
+  <div class="card-header bg-dark text-white">
+    <h3 class="mb-0">Crear Tarea</h3>
+  </div>
+
+  <div class="card-body">
+    <form [formGroup]="form" (ngSubmit)="save()">
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Título *</label>
+        <input class="form-control" formControlName="title" placeholder="Ej: Revisar reporte mensual">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Descripción</label>
+        <textarea class="form-control" rows="3" formControlName="description"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Usuario asignado *</label>
+        <select class="form-select" formControlName="userId">
+          <option value="">Seleccione...</option>
+          <option *ngFor="let u of users" [value]="u.id">
+            {{ u.fullName }} ({{ u.email }})
+          </option>
+        </select>
+      </div>
+
+      <hr>
+
+      <h5 class="mb-3">Información adicional</h5>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">Prioridad</label>
+          <select class="form-select" formControlName="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">Fecha estimada</label>
+          <input type="date" class="form-control" formControlName="estimatedFinishDate">
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label fw-bold">Etiquetas</label>
+          <input class="form-control"
+                 formControlName="tags"
+                 placeholder="Ej: urgente, soporte, cliente">
+          <small class="text-muted">Separadas por coma</small>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Metadatos libres</label>
+        <textarea class="form-control" rows="2" formControlName="metadata"></textarea>
+      </div>
+
+      <div class="d-flex justify-content-end gap-2">
+        <a class="btn btn-secondary" routerLink="/tasks">
+          Cancelar
+        </a>
+
+        <button class="btn btn-primary" type="submit">
+          Guardar Tarea
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

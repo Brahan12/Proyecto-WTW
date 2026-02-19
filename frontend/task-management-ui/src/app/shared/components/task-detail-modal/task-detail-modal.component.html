@@ -1,0 +1,90 @@
+<div *ngIf="show" class="modal fade show d-block" tabindex="-1" style="background: rgba(0,0,0,0.5);">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content shadow-lg">
+
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">{{ title }}</h5>
+        <button type="button" class="btn-close btn-close-white" (click)="close()"></button>
+      </div>
+
+      <div class="modal-body" *ngIf="task">
+
+        <!-- INFO PRINCIPAL -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <p><b>Título:</b> {{ task.title }}</p>
+            <p><b>Estado:</b> {{ task.status }}</p>
+            <p><b>Prioridad:</b> {{ task.priority || 'N/A' }}</p>
+          </div>
+
+          <div class="col-md-6">
+            <p><b>Usuario:</b> {{ userLabel }}</p>
+            <p><b>Fecha creación:</b> {{ task.createDate | date:'short' }}</p>
+            <p><b>Fecha estimada:</b>
+              <span *ngIf="getEstimatedFinishDate(); else noDate">
+                {{ getEstimatedFinishDate() | date:'shortDate' }}
+              </span>
+              <ng-template #noDate>
+                <span class="text-muted">No definida</span>
+              </ng-template>
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- DESCRIPCIÓN -->
+        <h6><b>Descripción</b></h6>
+        <p class="text-muted" *ngIf="!task.description">Sin descripción.</p>
+        <p *ngIf="task.description">{{ task.description }}</p>
+
+        <hr>
+
+        <!-- METADATA -->
+        <h6><b>Metadatos</b></h6>
+
+        <div *ngIf="getMetadataEntries(); else noMeta">
+
+          <ul class="list-group list-group-flush">
+            <li class=" d-flex pb-2"
+                *ngFor="let item of getMetadataEntries()">
+
+              <span class="fw-bold text-capitalize pe-2">
+                {{ item.key }}
+              </span>
+
+              <span class="text-muted">
+                {{ item.value }}
+              </span>
+
+            </li>
+          </ul>
+
+        </div>
+
+        <ng-template #noMeta>
+          <p class="text-muted">No hay metadatos registrados.</p>
+        </ng-template>
+
+        <!-- TAGS -->
+        <h6><b>Etiquetas</b></h6>
+
+        <div *ngIf="getTags().length > 0; else noTags">
+          <span class="badge bg-primary me-2 mb-2" *ngFor="let tag of getTags()">
+            {{ tag }}
+          </span>
+        </div>
+
+        <ng-template #noTags>
+          <p class="text-muted">No hay etiquetas registradas.</p>
+        </ng-template>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="close()">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>

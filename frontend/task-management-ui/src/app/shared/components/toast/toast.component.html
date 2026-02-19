@@ -1,0 +1,18 @@
+<div *ngIf="(toastService.toast$ | async) as toast"
+     class="toast-container position-fixed top-0 end-0 pt-2 pe-2"
+     style="z-index: 9999;">
+
+  <div class="toast show shadow-lg"
+       [ngClass]="getToastClass(toast.type)">
+
+    <div class="toast-header">
+      <strong class="me-auto">Notificación</strong>
+      <button type="button" class="btn-close" (click)="toastService.clear()"></button>
+    </div>
+
+    <div class="toast-body">
+      {{ toast.text }}
+    </div>
+
+  </div>
+</div>
