@@ -77,59 +77,58 @@ Ejemplo de contenido almacenado:
   }
 }
 ```
+---
 
-Ejecución y Compilación del Proyecto
+### Ejecución y Compilación del Proyecto
 
-Base de Datos
+## Base de Datos
 
-Ejecutar el script ubicado en:
+# Ejecutar el script ubicado en:
 
-database/SQLQuery1_Gestion_tareas.sql
-
-Este script crea la base de datos, tablas, relaciones, índices y la validación del campo JSON.
+- database/SQLQuery1_Gestion_tareas.sql
+- Este script crea la base de datos, tablas, relaciones, índices y la validación del campo JSON.
 
 ---
 
-Compilación del Backend
+## Compilación del Backend
 
-Desde la carpeta:
+# Desde la carpeta:
 
-backend/TaskManagementAPI
+- backend/TaskManagementAPI
 
-Compilar el proyecto ejecutando:
+# Compilar el proyecto ejecutando:
 
+- dotnet restore
+- dotnet build
 
-dotnet restore
-dotnet build
+# Swagger quedará disponible en:
 
-Swagger quedará disponible en:
+- https://localhost:7137/swagger
 
-https://localhost:7137/swagger
+# Credenciales de prueba:
 
-Credenciales de prueba:
-
-Usuario: admin
-Password: admin123
+- Usuario: admin
+- Password: admin123
 
 ---
 
-Compilación del Frontend
+### Compilación del Frontend
 
-Desde la carpeta:
+# Desde la carpeta:
 
-frontend/task-management-ui
+- frontend/task-management-ui
 
-Instalar dependencias y compilar:
+# Instalar dependencias y compilar:
 
-npm install
-npm run build
+- npm install
+- npm run build
 
-Para ejecutar en entorno de desarrollo:
+# Para ejecutar en entorno de desarrollo:
 
-ng serve
+- ng serve
 
-La aplicación estará disponible en:
+# La aplicación estará disponible en:
 
-http://localhost:4200
+- http://localhost:4200
 
 ---
