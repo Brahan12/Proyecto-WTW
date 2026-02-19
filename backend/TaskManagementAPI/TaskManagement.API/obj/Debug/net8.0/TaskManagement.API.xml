@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskManagement.API</name>
+    </assembly>
+    <members>
+        <member name="M:TaskManagement.API.Controllers.AuthController.Login(TaskManagement.Application.DTOs.Auth.LoginRequestDto)">
+            <summary>
+            Permite autenticarse y generar un token JWT.
+            </summary>
+            <remarks>
+            Usuario demo:
+            - Username: admin
+            - Password: admin123
+            </remarks>
+        </member>
+        <member name="M:TaskManagement.API.Controllers.TasksController.Create(TaskManagement.Application.DTOs.Tasks.CreateTaskRequestDto)">
+            <summary>
+            Permite crear una tarea y asignarla a un usuario.
+            </summary>
+            <remarks>
+            - El título es obligatorio.
+            - La tarea debe estar asignada a un usuario existente.
+            - El estado inicial siempre será "Pending".
+            - ExtraData puede almacenar JSON adicional como prioridad, etiquetas, etc.
+            </remarks>
+            <param name="request">Datos necesarios para registrar una tarea.</param>
+            <returns>Id de la tarea creada.</returns>
+            <response code="200">Tarea creada correctamente.</response>
+            <response code="400">Error de validación o datos incorrectos.</response>
+            <response code="401">No autorizado. Falta token JWT.</response>
+        </member>
+        <member name="M:TaskManagement.API.Controllers.TasksController.GetAll(System.String,System.String)">
+            <summary>
+            Retorna el listado de tareas.
+            </summary>
+            <remarks>
+            Se puede filtrar opcionalmente por estado:
+            Pending, InProgress o Done.
+            
+            También se puede filtrar por prioridad dentro del JSON:
+            Low, Medium o High.
+            </remarks>
+            <param name="status">Filtro opcional por estado.</param>
+            <param name="priority">Filtro opcional por prioridad (JSON).</param>
+            <returns>Listado de tareas.</returns>
+            <response code="200">Listado retornado correctamente.</response>
+            <response code="401">No autorizado. Falta token JWT.</response>
+        </member>
+        <member name="M:TaskManagement.API.Controllers.TasksController.UpdateStatus(System.Int32,TaskManagement.Application.DTOs.Tasks.UpdateTaskStatusRequestDto)">
+            <summary>
+            Permite cambiar el estado de una tarea.
+            </summary>
+            <remarks>
+            Reglas:
+            - Estados permitidos: Pending, InProgress, Done
+            - No se permite cambiar directamente de Pending a Done.
+            </remarks>
+            <param name="id">Id de la tarea.</param>
+            <param name="request">Nuevo estado.</param>
+            <returns>Confirmación del cambio.</returns>
+            <response code="200">Estado actualizado correctamente.</response>
+            <response code="400">Error de validación o regla de negocio incumplida.</response>
+            <response code="401">No autorizado. Falta token JWT.</response>
+        </member>
+        <member name="M:TaskManagement.API.Controllers.UsersController.Create(TaskManagement.Application.DTOs.Users.CreateUserRequestDto)">
+            <summary>
+            Permite crear un usuario en el sistema.
+            </summary>
+            <remarks>
+            Este endpoint registra un usuario con nombre completo y correo electrónico.
+            El correo debe tener un formato válido.
+            </remarks>
+            <param name="request">Datos del usuario a registrar.</param>
+            <returns>Id del usuario creado.</returns>
+            <response code="200">Usuario creado correctamente.</response>
+            <response code="400">Error de validación o datos incorrectos.</response>
+            <response code="401">No autorizado. Falta token JWT.</response>
+        </member>
+        <member name="M:TaskManagement.API.Controllers.UsersController.GetAll">
+            <summary>
+            Retorna el listado de usuarios registrados.
+            </summary>
+            <remarks>
+            Se utiliza para mostrar usuarios disponibles al momento de asignar tareas.
+            </remarks>
+            <returns>Lista de usuarios.</returns>
+            <response code="200">Listado retornado correctamente.</response>
+            <response code="401">No autorizado. Falta token JWT.</response>
+        </member>
+    </members>
+</doc>

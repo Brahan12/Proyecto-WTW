@@ -1,0 +1,11 @@
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.deps.json
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\bin\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.AssemblyInfo.cs
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\refint\TaskManagement.Domain.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\TaskManagement.Domain.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Domain\obj\Debug\net10.0\ref\TaskManagement.Domain.dll

@@ -1,0 +1,17 @@
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.deps.json
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Infrastructure.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Domain.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Application.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\bin\Debug\net8.0\TaskManagement.Domain.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskMana.BCA0E1A6.Up2Date
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\refint\TaskManagement.Infrastructure.dll
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\TaskManagement.Infrastructure.pdb
+C:\Users\laura\Desktop\Prueba_WTW\backend\TaskManagementAPI\TaskManagement.Infrastructure\obj\Debug\net8.0\ref\TaskManagement.Infrastructure.dll
